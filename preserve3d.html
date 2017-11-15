@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {background-color: blue;}
+#div1 {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    margin: 100px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+#div2 {
+    padding: 50px;
+    position: absolute;
+    border: 1px solid black;
+    background-color: red;
+    -webkit-transform: rotateY(60deg); /* Chrome, Safari, Opera */
+    -webkit-transform-style: preserve-3d; /* Chrome, Safari, Opera */
+    transform: rotateY(60deg);
+    transform-style: preserve-3d;
+    
+  background-size: 200px 200px;
+  background-repeat:no-repeat;
+  background-color: red;
+  background-image: linear-gradient(to right, black 0%,white 100%), url('https://www.w3schools.com/cssref/w3css.gif');
+
+  background-blend-mode: lighten;
+}
+
+#div3 {
+    padding: 40px;
+    position: absolute;
+    border: 1px solid black;
+    background-color: yellow;
+    -webkit-transform: rotateY(-6deg); /* Chrome, Safari, Opera */
+    transform: rotateY(-6deg);
+    -webkit-transform-style: preserve-3d; /* Chrome, Safari, Opera */
+    transform-style: preserve-3d;
+    mix-blend-mode: lighten;
+}
+</style>
+</head>
+<body>
+
+<div id="div1">
+  <div id="div2">HELLO
+    <img id="div3" src='https://www.w3schools.com/cssref/w3css.gif'></img>
+  </div>
+</div>
+
+</body>
+</html>
+
